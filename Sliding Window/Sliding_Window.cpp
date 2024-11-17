@@ -15,7 +15,14 @@ int main()
         empty.push_back(base[i]);
     }
 
-    // code
+    for (int i = 0; i < 4; i++)
+    {
+        cout << empty[i] << "";
+    }
+
+    // for (int j = 0; j < 4; j++){
+
+    // }
 
     return 0;
 }

@@ -3,7 +3,7 @@ package com.binarySearch;
 public class Sqrt {
 
     public static void main(String[] args) {
-        int x = 3599;
+        int x = 2147395599;
 
         int ans = mySqrt(x);
 
@@ -16,28 +16,29 @@ public class Sqrt {
             return x;
         }
 
-        int start = 0;
-        int end = x - 1;
+        int start = 1;
+        int end = x;
 
-        int[] arr = new int[x];
-
-        for (int i = 0; i <= end; i++){
-            arr[i] = i + 1;
-        }
+//        int[] arr = new int[x];
+//
+//        for (int i = 0; i <= end; i++){
+//            arr[i] = i + 1;
+//        }
 
         while (start <= end){
             int mid = start + (end - start)/2;
+            long square = (long) mid * mid;
 
-            if (arr[mid]*arr[mid] < x){
+            if (square < x){
                 start = mid + 1;
-            } else if (arr[mid] * arr[mid] > x){
+            } else if (square > x){
                 end = mid - 1;
             } else {
-                return arr[mid];
+                return mid;
             }
         }
 
-        return arr[end];
+        return end;
 
     }
 }

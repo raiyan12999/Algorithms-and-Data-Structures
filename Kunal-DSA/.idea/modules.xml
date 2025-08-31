@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Kunal-DSA.iml" filepath="$PROJECT_DIR$/Kunal-DSA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Basics/com.array/com.array.iml" filepath="$PROJECT_DIR$/../Basics/com.array/com.array.iml" />
     </modules>
   </component>
 </project>

@@ -1,5 +1,7 @@
 package com.array;
 
+import java.util.Arrays;
+
 public class Array {
 
     public static void main(String[] args) {
@@ -22,5 +24,13 @@ public class Array {
         for (int i : arr2){
             System.out.println(i);
         }
+
+        // printing arrays using toString() method
+        System.out.println(Arrays.toString(arr1));
+
+
     }
+
+
+
 }

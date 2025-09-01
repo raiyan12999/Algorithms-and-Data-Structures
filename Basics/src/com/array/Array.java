@@ -25,10 +25,14 @@ public class Array {
             System.out.println(i);
         }
 
+        int[] arr3 = {323, 3, 52,35, 3};
+
         // printing arrays using toString() method
         System.out.println(Arrays.toString(arr1));
 
-
+        // Sorting an array
+        Arrays.sort(arr3);
+        System.out.println(Arrays.toString(arr3));
     }
 
 

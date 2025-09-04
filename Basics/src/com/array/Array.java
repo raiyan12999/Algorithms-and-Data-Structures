@@ -33,6 +33,10 @@ public class Array {
         // Sorting an array
         Arrays.sort(arr3);
         System.out.println(Arrays.toString(arr3));
+
+
+        int index = Arrays.binarySearch(arr3, 35);
+        System.out.println(index);
     }
 
 

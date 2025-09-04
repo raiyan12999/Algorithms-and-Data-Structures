@@ -37,6 +37,9 @@ public class Array {
 
         int index = Arrays.binarySearch(arr3, 35);
         System.out.println(index);
+
+        Arrays.fill(arr3, 6);
+        System.out.println(Arrays.toString(arr3));
     }
 
 

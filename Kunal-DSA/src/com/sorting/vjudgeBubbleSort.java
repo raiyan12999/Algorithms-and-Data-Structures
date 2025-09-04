@@ -16,11 +16,9 @@ public class vjudgeBubbleSort {
             arr[i] = sc.nextInt();
         }
 
-//        System.out.println(Arrays.toString(arr));
+        // Print the unsorted one
         printArray(arr);
         bubble(arr);
-        printArray(arr);
-//        System.out.println("Sorted array: " + Arrays.toString(arr));
     }
 
     static void bubble(int[] nums){
@@ -35,6 +33,7 @@ public class vjudgeBubbleSort {
                     nums[j] = nums[j+1];
                     nums[j+1] = temp;
                     swapped = true;
+                    printArray(nums);
                 }
 //                System.out.println(Arrays.toString(nums));
             }
@@ -52,6 +51,6 @@ public class vjudgeBubbleSort {
                 System.out.print(" ");
             }
         }
-//        System.out.println();
+        System.out.println();
     }
 }

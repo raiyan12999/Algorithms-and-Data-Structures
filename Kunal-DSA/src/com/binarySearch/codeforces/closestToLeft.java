@@ -2,7 +2,7 @@ package com.binarySearch.codeforces;
 
 import java.util.Scanner;
 
-public class aBinarySearch {
+public class closestToLeft {
 
     public static void main(String[] args) {
 
@@ -22,12 +22,12 @@ public class aBinarySearch {
             queries[i] = sc.nextInt();
         }
 
-        int target = 10;
+        int target;
 
         for (int i = 0; i < queries.length; i++){
             target = queries[i];
 
-            String ans = binarySearch(arr, target);
+            int ans = binarySearch(arr, target);
             System.out.println(ans);
         }
 
@@ -39,7 +39,7 @@ public class aBinarySearch {
 //        printArray(queries);
     }
 
-    static String binarySearch(int[] nums, int target){
+    static int binarySearch(int[] nums, int target){
 
         int start = 0;
         int end = nums.length - 1;
@@ -53,11 +53,11 @@ public class aBinarySearch {
             } else if (nums[mid] > target){
                 end = mid - 1;
             } else {
-                return "YES";
+                return mid + 1;
             }
         }
 
-        return "NO";
+        return end + 1;
     }
 
     static void printArray(int[] nums){
@@ -72,3 +72,4 @@ public class aBinarySearch {
         System.out.println();
     }
 }
+

@@ -20,6 +20,9 @@ public class Recursive1toN {
         printNumber(in - 1);
         System.out.println(in);
 
+        // Exactly same as printing N to 1
+        // Just here printing is done after calling the function
+
     }
 }
 
